@@ -1,0 +1,18 @@
+<div id="container" (click)="selectMode()">
+  <div class="square">
+    <span *ngFor="let word of input.squareContent">
+      {{word}}
+    </span>
+  </div>
+
+  <div id="under-square">
+    <h4>
+      {{input.underSquareTitle}}
+    </h4>
+    <ul id="pluses">
+      <li *ngFor="let plus of input.pluses">
+        {{plus}}
+      </li>
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,31 @@
+#container {
+
+}
+
+.square {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 25rem;
+  height: 25rem;
+  padding: 2%;
+  background-color: white;
+  color: #ffc60c;
+  font-weight: bold;
+  font-size: 3.5rem;
+}
+.square span {
+  display: block;
+}
+
+#under-square {
+  margin: 2rem 0 1rem 2rem;
+}
+h4 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+#pluses li {
+  font-size: 1.5rem;
+}

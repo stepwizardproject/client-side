@@ -1,0 +1,28 @@
+#container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.info-message {
+  background-color: white;
+  background-size: cover;
+  display: inline-block;
+  height: 3.5rem;
+  text-align: center;
+}
+
+#number {
+  width: 3.5rem;
+  font-size: 3.8rem;
+  line-height: 3.8rem;
+  color: #ffc60c;
+  font-weight: 1000;
+  margin-right: 0.5rem;
+}
+
+#message {
+  line-height: 3.5rem;
+  font-size: 1.2rem;
+  padding: 0 0.9rem 0  0.6rem;
+  font-weight: 800;
+}
