@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {State} from '../../models/state';
+import {StateService} from '../../services/state.service';
 
 @Component({
   selector: 'app-next-button',
@@ -6,12 +8,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./next-button.component.css']
 })
 export class NextButtonComponent implements OnInit {
-  constructor() { }
+  constructor(stateService: StateService) { }
 
   ngOnInit() {
   }
 
-  sendEvent() {
+  changeState() {
 
   }
 
