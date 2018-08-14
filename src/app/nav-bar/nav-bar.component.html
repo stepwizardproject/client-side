@@ -1,7 +1,9 @@
 <div>
   <ul>
     <li *ngFor="let state of states">
-      {{state.title}}
+      <div [ngClass]="state.number <= currentState.number ? 'active' : ''">
+        {{state.title}}
+      </div>
     </li>
   </ul>
 </div>

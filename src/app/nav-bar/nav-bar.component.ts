@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {State} from '../models/state';
+import {StateService} from '../services/state.service';
 
 @Component({
   selector: 'app-nav-bar',
@@ -7,17 +8,13 @@ import {State} from '../models/state';
   styleUrls: ['./nav-bar.component.css']
 })
 export class NavBarComponent implements OnInit {
-  public states: State[] = [
-    new State('intro'),
-    new State('challenge'),
-    new State('brainstorm'),
-    new State('results'),
-    new State('sorting'),
-    new State('cost/impact'),
-    new State('matrix')
-  ];
-
-  constructor() {
+  public states: State[] = [];
+  public currentState: State = null;
+  constructor(private stateService: StateService) {
+    this.states = this.stateService.getStates();
+    this.stateService.currentState.subscribe((state) => {
+      this.currentState = state;
+    });
   }
 
   ngOnInit() {
