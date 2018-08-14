@@ -18,4 +18,6 @@ li .active {
   color: #040900;
 }
 
-
+#round {
+  border-radius: 50%;
+}

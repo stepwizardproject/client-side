@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-
+import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { ContentComponent } from './content/content.component';
 import { ModeSelectorComponent } from './content/mode-selector/mode-selector.component';
@@ -9,6 +8,7 @@ import { MessageLineComponent } from './content/message-line/message-line.compon
 import { NextButtonComponent } from './lib-components/next-button/next-button.component';
 import { ModeSelectionComponent } from './pages/mode-selection/mode-selection.component';
 import { ChallengeComponent } from './pages/challenge/challenge.component';
+import {NgModule} from '@angular/core';
 
 @NgModule({
   declarations: [
@@ -22,7 +22,8 @@ import { ChallengeComponent } from './pages/challenge/challenge.component';
     ChallengeComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
