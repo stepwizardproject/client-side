@@ -1,5 +1,7 @@
 <div id="container">
-    <app-mode-selector [input]="{
+    <app-mode-selector
+      (click)="chooseMode('quick')"
+      [input]="{
         pluses: [],
         underSquareTitle: 'Brainwriting',
         squareContent: ['Quick', 'brainstorming'] }"></app-mode-selector>
