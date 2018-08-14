@@ -8,7 +8,7 @@ import {BehaviorSubject} from 'rxjs';
 export class StateService {
 
   private states: State[] = [
-    new State('intro', 1),
+    new State('mode-selection', 1),
     new State('challenge', 2),
     new State('brainstorm', 3),
     new State('results', 4),

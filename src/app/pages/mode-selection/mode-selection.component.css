@@ -6,8 +6,7 @@
 }
 #container div {
   display: flex;
-  justify-content: space-around;
 }
 #container div app-mode-selector {
-
+  margin: 0 10rem;
 }
