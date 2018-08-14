@@ -1,16 +1,3 @@
 <div id="container">
-  <app-message-line
-    [message]="'Write down a problem to solve'"
-    [number]="1"></app-message-line>
-  <app-mode-selector [input]="{
-    pluses: [],
-    underSquareTitle: 'Brainwriting',
-    squareContent: ['Quick', 'brainstorming'] }"></app-mode-selector>
-
-  <app-mode-selector
-    [input]="{
-    pluses: ['Matix'],
-    underSquareTitle: 'Brainwriting',
-    squareContent: ['Complete', 'brainstorming'] }" ></app-mode-selector>
-  <app-next-button></app-next-button>
+  <app-mode-selection></app-mode-selection>
 </div>

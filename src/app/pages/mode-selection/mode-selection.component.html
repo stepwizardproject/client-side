@@ -1,3 +1,13 @@
-<p>
-  mode-selection works!
-</p>
+<div id="container">
+  <div>
+    <app-mode-selector [input]="{
+        pluses: [],
+        underSquareTitle: 'Brainwriting',
+        squareContent: ['Quick', 'brainstorming'] }"></app-mode-selector>
+    <app-mode-selector
+      [input]="{
+        pluses: ['Matix'],
+        underSquareTitle: 'Brainwriting',
+        squareContent: ['Complete', 'brainstorming'] }" ></app-mode-selector>
+  </div>
+</div>

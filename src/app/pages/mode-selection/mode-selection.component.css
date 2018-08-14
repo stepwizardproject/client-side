@@ -1,0 +1,13 @@
+#container {
+  display: flex;
+  height: 90vh;
+  flex-direction: column;
+  justify-content: center;
+}
+#container div {
+  display: flex;
+  justify-content: space-around;
+}
+#container div app-mode-selector {
+
+}
