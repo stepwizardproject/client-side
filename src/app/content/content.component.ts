@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {StateService} from '../services/state.service';
+import {State} from '../models/state';
 
 @Component({
   selector: 'app-content',
@@ -7,7 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContentComponent implements OnInit {
 
-  constructor() { }
+  public currentState: State;
+
+  constructor(stateService: StateService) {
+    stateService.currentState.subscribe((newState) => this.currentState = newState);
+  }
 
   ngOnInit() {
   }
