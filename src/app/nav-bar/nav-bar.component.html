@@ -1,6 +1,6 @@
 <div id="container">
   <ul>
-    <li *ngFor="let state of states" style="width: {{100/states.length}}%">
+    <li *ngFor="let state of states">
       <div [ngClass]="state.number === currentState.number ? 'active' : ''" >
         <div id="round"></div>
         {{state.title}}
