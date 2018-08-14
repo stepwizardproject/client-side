@@ -8,7 +8,7 @@ import {StateService} from '../../services/state.service';
 })
 export class ModeSelectionComponent implements OnInit {
 
-  constructor(private stateService = new StateService()) { }
+  constructor(private stateService: StateService) { }
 
   ngOnInit() {
   }
