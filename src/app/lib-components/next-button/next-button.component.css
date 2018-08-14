@@ -1,0 +1,10 @@
+div {
+  background-color: black;
+  color: #ffc60c;
+  font-size: 2.5rem;
+  padding: 0 0.7rem;
+  font-weight: bold;
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
+}

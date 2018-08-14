@@ -6,8 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./next-button.component.css']
 })
 export class NextButtonComponent implements OnInit {
-
-
   constructor() { }
 
   ngOnInit() {

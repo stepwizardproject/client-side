@@ -7,6 +7,7 @@ import { ModeSelectorComponent } from './content/mode-selector/mode-selector.com
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { MessageLineComponent } from './content/message-line/message-line.component';
 import { NextButtonComponent } from './lib-components/next-button/next-button.component';
+import { ModeSelectionComponent } from './pages/mode-selection/mode-selection.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { NextButtonComponent } from './lib-components/next-button/next-button.co
     ModeSelectorComponent,
     NavBarComponent,
     MessageLineComponent,
-    NextButtonComponent
+    NextButtonComponent,
+    ModeSelectionComponent
   ],
   imports: [
     BrowserModule
