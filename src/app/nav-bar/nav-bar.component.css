@@ -4,10 +4,18 @@
 ul {
   font-size: 1.3rem;
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   text-transform: uppercase;
   font-weight: bold;
+  list-style: none;
 }
 li {
-  display: inline-block;
+  color: #9a7010;
 }
+
+li .active {
+  color: #040900;
+}
+
+

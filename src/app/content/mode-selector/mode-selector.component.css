@@ -11,7 +11,7 @@
   height: 25rem;
   padding: 2%;
   background-color: white;
-  color: #ffc60c;
+  color: #fbb82b;
   font-weight: bold;
   font-size: 3.5rem;
 }
@@ -21,12 +21,24 @@
 
 #under-square {
   margin: 2rem 0 1rem 2rem;
+  height: 4rem;
 }
 h4 {
   margin: 0;
   font-size: 1.8rem;
 }
 
+#pluses {
+  list-style: none;
+}
+
 #pluses li {
   font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#pluses li:before {
+  font-size: 1.5rem;
+  font-weight: bold;
+  content: "+";
 }
