@@ -1,13 +1,14 @@
 <div id="container">
-    <app-mode-selector
-      class="choice"
-      [input]="{
+  <div>
+    <app-mode-selector [input]="{
         pluses: [],
         underSquareTitle: 'Brainwriting',
         squareContent: ['Quick', 'brainstorming'] }"></app-mode-selector>
     <app-mode-selector
+      (click)="chooseMode('complete')"
       [input]="{
         pluses: ['Matix'],
         underSquareTitle: 'Brainwriting',
         squareContent: ['Complete', 'brainstorming'] }" ></app-mode-selector>
+  </div>
 </div>

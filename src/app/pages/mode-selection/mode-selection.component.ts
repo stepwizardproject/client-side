@@ -12,4 +12,7 @@ export class ModeSelectionComponent implements OnInit {
   ngOnInit() {
   }
 
+  chooseMode(mode: string): any {
+
+  }
 }
