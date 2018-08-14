@@ -34,6 +34,7 @@ export class StateService {
       return null;
     } else {
      this.currentState.next(nextState);
+
      return nextState;
     }
   }
