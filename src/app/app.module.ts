@@ -9,6 +9,7 @@ import { NextButtonComponent } from './lib-components/next-button/next-button.co
 import { ModeSelectionComponent } from './pages/mode-selection/mode-selection.component';
 import { ChallengeComponent } from './pages/challenge/challenge.component';
 import {NgModule} from '@angular/core';
+import { ResultsComponent } from './pages/results/results.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import {NgModule} from '@angular/core';
     MessageLineComponent,
     NextButtonComponent,
     ModeSelectionComponent,
-    ChallengeComponent
+    ChallengeComponent,
+    ResultsComponent
   ],
   imports: [
     BrowserModule,
