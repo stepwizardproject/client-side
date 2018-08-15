@@ -11,6 +11,7 @@ ul {
   list-style: none;
 }
 li {
+  cursor: default;
   color: #9a7010;
 }
 
