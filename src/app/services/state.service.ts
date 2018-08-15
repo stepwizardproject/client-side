@@ -33,9 +33,9 @@ export class StateService {
     if (typeof nextState === 'undefined') {
       return null;
     } else {
-     this.currentState.next(nextState);
-
-     return nextState;
+      this.currentState.next(nextState);
+      this.currentStateSync = nextState;
+      return nextState;
     }
   }
 }

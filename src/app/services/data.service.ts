@@ -6,6 +6,6 @@ import { Injectable } from '@angular/core';
 export class DataService {
   public minutes: number;
   public question: string;
-
+  public ideas: string[] = [];
   constructor() { }
 }

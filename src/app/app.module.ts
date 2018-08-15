@@ -10,6 +10,7 @@ import { ModeSelectionComponent } from './pages/mode-selection/mode-selection.co
 import { ChallengeComponent } from './pages/challenge/challenge.component';
 import {NgModule} from '@angular/core';
 import { ResultsComponent } from './pages/results/results.component';
+import { BrainstormComponent } from './pages/brainstorm/brainstorm.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,8 @@ import { ResultsComponent } from './pages/results/results.component';
     ModeSelectionComponent,
     ChallengeComponent,
     ResultsComponent
+    ChallengeComponent,
+    BrainstormComponent
   ],
   imports: [
     BrowserModule,

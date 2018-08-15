@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import {State} from '../../models/state';
 import {StateService} from '../../services/state.service';
 
 @Component({
@@ -8,13 +7,12 @@ import {StateService} from '../../services/state.service';
   styleUrls: ['./next-button.component.css']
 })
 export class NextButtonComponent implements OnInit {
-  constructor(stateService: StateService) { }
+  constructor(private stateService: StateService) { }
 
   ngOnInit() {
   }
 
   changeState() {
-
   }
 
 }
