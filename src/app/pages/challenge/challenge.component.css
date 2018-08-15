@@ -1,0 +1,27 @@
+#container {
+  display: flex;
+  height: 90vh;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#problem {
+  background-color: rgba(255, 255, 255, 0);
+  outline: none;
+  border: none;
+  border-bottom: 2px solid white;
+  padding: 0 1rem 0.3rem 1rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.part {
+}
+#time-picker div {
+  display: inline-block;
+}
+#time-picker div input {
+
+}
+#time-picker div label {
+  display: block;
+  margin-top: 0.5rem;
+}

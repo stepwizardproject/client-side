@@ -4,6 +4,8 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class DataService {
+  public minutes: number;
+  public question: string;
 
   constructor() { }
 }

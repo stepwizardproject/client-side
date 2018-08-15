@@ -3,12 +3,26 @@
     <app-message-line
       [number]="1"
       [message]="'Write down a problem to solve'"></app-message-line>
-    <!--<input-->
-      <!--type="text"-->
-      <!--id="problem"-->
-      <!--[(ngModel)]="problem">-->
+    <input
+      type="text"
+      id="problem"
+      [(ngModel)]="problem">
   </div>
   <div class="part">
-
+    <app-message-line
+      [number]="2"
+      [message]="'Choose the length of your brainstorming'"></app-message-line>
   </div>
+
+  <div id="time-picker">
+    <div *ngFor="let minute of minutes">
+      <input type="radio"
+             name="minute"
+             value="1"
+             id="minute{{minute}}">
+      <label for="minute{{minute}}">{{minute}}</label>
+    </div>
+  </div>
+
+  <app-next-button (click)="nextStep()"></app-next-button>
 </div>
